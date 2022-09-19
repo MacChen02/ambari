@@ -76,18 +76,18 @@ class Multiplier:
     self.parse_configs()
 
     if len(args) != 2:
-      print "Sample Usage: python agent_multiplier.py [action]\n" \
-            "actions: start|stop|restart|status"
+      print("Sample Usage: python agent_multiplier.py [action]\n" \
+            "actions: start|stop|restart|status")
     self.command = args[1]
 
     # Validate configs
     self.validate()
 
-    print "*** Params ***"
-    print "Start: %d" % self.start
-    print "Num: %d" % self.num
-    print "Prefix: %s" % self.prefix
-    print "Command: %s" % self.command
+    print("*** Params ***")
+    print("Start: %d" % self.start)
+    print("Num: %d" % self.num)
+    print("Prefix: %s" % self.prefix)
+    print("Command: %s" % self.command)
 
     # All hostnames that will be managed by Ambari Agents on this host
     self.hosts = []
